@@ -33,10 +33,11 @@ void wifiSetup() {
   Serial.printf("[WIFI] STATION Mode, SSID: %s, IP address: %s\n", WiFi.SSID().c_str(), WiFi.localIP().toString().c_str());
 }
 
+
 void setup() {
   // Init serial port and clean garbage
   Serial.begin(SERIAL_BAUDRATE);
-  Serial.println();
+  
 
   // Wi-Fi connection
   wifiSetup();
